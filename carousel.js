@@ -11,18 +11,19 @@ const nav = document.querySelector(".nav");
 const dots = [...nav.children];
 //select all the slides inside the carousel
 const slides = [...carousel.children];
+//const slides = Array.from(carousel.children)
 //calculate the slides width
-
+console.log(slides);
 let slideWidth = slides[0].getBoundingClientRect().width;
 
 //position the slides horisontaly
-/*function positionSlides(slides){
+function positionSlides(slides){
 		for(let index = 0; index < slides.length; index++){
 			slides[index].slyle.left = slideWidth * index + 'px';
 		}
 }
 positionSlides(slides);
-*/
+
 //on right button click, we move (translateX) the carousel to the left
 nextButton.addEventListener("click", function(){
 	const currentSlide = carousel.querySelector(".active");
