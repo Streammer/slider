@@ -19,7 +19,7 @@ let slideWidth = slides[0].getBoundingClientRect().width;
 //position the slides horisontaly
 function positionSlides(slides){
 		for(let index = 0; index < slides.length; index++){
-			slides[index].slyle.left = slideWidth * index + 'px';
+			slides[index].style.left = slideWidth * index + 'px';
 		}
 }
 positionSlides(slides);
